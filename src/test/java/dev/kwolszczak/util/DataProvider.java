@@ -25,6 +25,9 @@ public class DataProvider {
     }
 
     public static Stream<Arguments> dataProvider() {
-        return Stream.of(Arguments.of("London"), Arguments.of("Oxford"), Arguments.of("Gdańsk"));
+        return Stream.of(
+                Arguments.of("London"),
+                Arguments.of("Oxford"),
+                Arguments.of("Gdańsk"));
     }
 }
