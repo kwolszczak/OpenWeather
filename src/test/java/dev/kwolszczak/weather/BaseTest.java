@@ -1,11 +1,10 @@
-package dev.kwolszczak;
+package dev.kwolszczak.weather;
 
-import dev.kwolszczak.util.RequestSpec;
+import dev.kwolszczak.weather.util.RequestSpec;
 import io.restassured.specification.RequestSpecification;
 import org.junit.jupiter.api.BeforeEach;
 
 public class BaseTest {
-
 
     protected static RequestSpecification requestSpecificationWeather;
 

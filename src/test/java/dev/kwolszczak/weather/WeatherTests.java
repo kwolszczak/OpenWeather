@@ -1,6 +1,6 @@
-package dev.kwolszczak;
+package dev.kwolszczak.weather;
 
-import dev.kwolszczak.supportTest.Location;
+import dev.kwolszczak.weather.supportTest.Location;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
@@ -9,7 +9,7 @@ import static io.restassured.RestAssured.given;
 class WeatherTests extends BaseTest {
 
     @ParameterizedTest
-    @MethodSource("dev.kwolszczak.util.DataProvider#dataProvider")
+    @MethodSource("dev.kwolszczak.weather.util.DataProvider#dataProvider")
     void shouldGetWeatherForACity(String city) {
 
         Location location = new Location(city);

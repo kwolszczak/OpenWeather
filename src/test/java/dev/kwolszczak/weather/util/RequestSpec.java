@@ -1,4 +1,4 @@
-package dev.kwolszczak.util;
+package dev.kwolszczak.weather.util;
 
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;

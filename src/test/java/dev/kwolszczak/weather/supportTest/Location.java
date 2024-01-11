@@ -1,6 +1,6 @@
-package dev.kwolszczak.supportTest;
+package dev.kwolszczak.weather.supportTest;
 
-import dev.kwolszczak.util.RequestSpec;
+import dev.kwolszczak.weather.util.RequestSpec;
 import io.restassured.path.json.JsonPath;
 import lombok.Getter;
 import lombok.Setter;
