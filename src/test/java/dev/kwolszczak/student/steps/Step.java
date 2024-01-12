@@ -9,11 +9,13 @@ import static io.restassured.RestAssured.given;
 public class Step {
 
     public static int createStudent(Student student) {
-        return given().spec(RequestSpec.getStudentReqSpec())
+        var id= given().spec(RequestSpec.getStudentReqSpec())
                       .body(student)
                 .when().post()
                 .then().assertThat().statusCode(201)
                 .extract().as(Student.class).getId();
+        student.setId(id);
+        return id;
     }
 
     public static Student getStudent(int studentId) {

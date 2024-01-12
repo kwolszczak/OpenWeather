@@ -13,6 +13,7 @@ class StudentTest extends BaseTest {
     void shouldGetStudentFromAPIandDeleteHim() {
 
         Student testStudent = new Student(properties.getProperty("firstName"), properties.getProperty("middleName"), properties.getProperty("lastName"), properties.getProperty("dob"));
+        String newMiddleName = properties.getProperty("newMiddleName");
 
         //POST -create student
         int studentId = Step.createStudent(testStudent);
@@ -21,18 +22,16 @@ class StudentTest extends BaseTest {
         assertThat(createdStudent).usingRecursiveComparison().ignoringFields("id").isEqualTo(testStudent);
 
         //PUT-update middle name
-        String newMiddleName = properties.getProperty("newMiddleName");
-        testStudent.setId(studentId);
         testStudent.setMiddle_name(newMiddleName);
         Step.updateStudent(testStudent);
-
         var updatedStudent = Step.getStudent(studentId);
+
         assertThat(updatedStudent.getMiddle_name()).isEqualTo(newMiddleName);
 
         //delete
         Step.deleteStudent(studentId);
-
         var deletedStudent = Step.getStudent(studentId);
+
         assertThat(deletedStudent).isNull();
     }
 }
