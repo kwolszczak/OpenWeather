@@ -1,4 +1,4 @@
-package dev.kwolszczak.weather.util;
+package dev.kwolszczak;
 
 import org.junit.jupiter.params.provider.Arguments;
 

@@ -9,7 +9,7 @@ import static io.restassured.RestAssured.given;
 class WeatherTests extends BaseTest {
 
     @ParameterizedTest
-    @MethodSource("dev.kwolszczak.weather.util.DataProvider#dataProvider")
+    @MethodSource("dev.kwolszczak.DataProvider#dataProvider")
     void shouldGetWeatherForACity(String city) {
 
         Location location = new Location(city);

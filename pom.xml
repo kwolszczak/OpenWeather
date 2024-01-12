@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>dev.kwolszczak</groupId>
-    <artifactId>OpenWeather</artifactId>
+    <artifactId>APIDemo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -51,7 +51,7 @@
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
-            <version>3.24.2</version>
+            <version>3.25.1</version>
             <scope>test</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->

@@ -1,5 +1,6 @@
 package dev.kwolszczak.weather.util;
 
+import dev.kwolszczak.DataProvider;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
